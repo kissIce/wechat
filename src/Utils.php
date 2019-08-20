@@ -72,22 +72,22 @@ class Utils
         //设置超时
         curl_setopt($ch, CURLOPT_TIMEOUT, $second);
         //如果有配置代理这里就设置代理
-        if($this->curl_proxy_host != "0.0.0.0" && $this->curl_proxy_port != 0){
-            curl_setopt($ch,CURLOPT_PROXY, $this->curl_proxy_host);
-            curl_setopt($ch,CURLOPT_PROXYPORT, $this->curl_proxy_port);
-        }
+//        if($this->curl_proxy_host != "0.0.0.0" && $this->curl_proxy_port != 0){
+//            curl_setopt($ch,CURLOPT_PROXY, $this->curl_proxy_host);
+//            curl_setopt($ch,CURLOPT_PROXYPORT, $this->curl_proxy_port);
+//        }
         curl_setopt($ch,CURLOPT_URL, $url);
         curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,TRUE);
         curl_setopt($ch,CURLOPT_SSL_VERIFYHOST,2);//严格校验
         curl_setopt($ch, CURLOPT_HEADER, FALSE);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        if($useCert == true){
-            //设置证书
-            curl_setopt($ch,CURLOPT_SSLCERTTYPE,'PEM');
-            curl_setopt($ch,CURLOPT_SSLCERT, $this->sslcert_path);
-            curl_setopt($ch,CURLOPT_SSLKEYTYPE,'PEM');
-            curl_setopt($ch,CURLOPT_SSLKEY, $this->sslkey_path);
-        }
+//        if($useCert == true){
+//            //设置证书
+//            curl_setopt($ch,CURLOPT_SSLCERTTYPE,'PEM');
+//            curl_setopt($ch,CURLOPT_SSLCERT, $this->sslcert_path);
+//            curl_setopt($ch,CURLOPT_SSLKEYTYPE,'PEM');
+//            curl_setopt($ch,CURLOPT_SSLKEY, $this->sslkey_path);
+//        }
         //post提交方式
         curl_setopt($ch, CURLOPT_POST, TRUE);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $xml);
