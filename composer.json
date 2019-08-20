@@ -1,0 +1,27 @@
+{
+    "name": "angellce/wechat",
+    "type": "library",
+    "version": "v2.0.5",
+    "keywords": [
+        "php",
+        "swoole",
+        "swoft"
+    ],
+    "description": "Swoft Wechat SDK",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "angellce",
+            "email": "709896100@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Angellce\\Wechat\\": "src/"
+        }
+    }
+}
