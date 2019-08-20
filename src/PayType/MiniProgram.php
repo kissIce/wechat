@@ -6,7 +6,7 @@
  * Time: 下午3:04
  */
 
-namespace Anegllce\Wechat\PayType;
+namespace Angellce\Wechat\PayType;
 
 use Angellce\Wechat\Utils;
 

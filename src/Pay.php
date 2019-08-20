@@ -9,9 +9,9 @@
 namespace Angellce\Wechat;
 
 
-use Anegllce\Wechat\PayType\H5;
-use Anegllce\Wechat\PayType\MiniProgram;
-use Anegllce\Wechat\PayType\OfficialAccount;
+use Angellce\Wechat\PayType\H5;
+use Angellce\Wechat\PayType\MiniProgram;
+use Angellce\Wechat\PayType\OfficialAccount;
 
 class Pay
 {
