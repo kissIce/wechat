@@ -54,6 +54,7 @@ class Notify
                 } else {
                     $ret['xml']  = $this->arrayToXml(['return_code' => 'SUCCESS', 'return_msg' => '支付成功']);
                     $ret['code'] = 0;
+                    $ret['out_trade_no'] = $result_arr['out_trade_no'];
                     $ret['msg']  = '支付成功';
                 }
             }
